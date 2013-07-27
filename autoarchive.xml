@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>AutoArchive2</name>
+	<author>David Huelsmann / (TeachmeJoomla)</author>
+	<creationDate>December 10, 2009</creationDate>
+	<copyright>&#169; 2009 David Huelsmann / ( &#169; 2005 Tudor Ilisoi). All rights reserved.</copyright>
+	<license>GPL Version 3 [url]http://www.gnu.org/licenses/gpl.html[/url]</license>
+	<authorEmail>webmaster@huelsmann.us</authorEmail>
+	<authorUrl>http://www.huelsmann.us</authorUrl>
+	<version>2.0.3</version>
+	<description>PLUGIN_DESCRIPTION</description>
+	<files>
+		<filename plugin="autoarchive2">autoarchive2.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_autoarchive2.ini</language>
+	</languages>
+	<params>
+	<param type="spacer" name="@spacer" default="BASIC_SETTINGS"></param>
+ <param name="action" type="list" default="archive" label="ACTION_TO_PERFORM" description="SET_ACTION">
+			<option value="archive">MOVE_TO_ARCHIVE</option>
+			<option value="trash">SEND_TO_ARTICLE_TRASH</option>
+		  <option value="move-to-cat">MOVE_TO_ARCHIVE_AND_TO_SECTION</option><option value="add-to-cat">MOVE_TO_SECTION_AND_REPUBLISH</option>
+		  <option value="delete">DELETE_PERMANENTLY</option>
+ </param>
+ <param name="category" type="category" label="DESTINATION_SECTION" description="ARTICLE_MOVE_TIP" ></param>
+		<param name="days" type="text" size="4" default="0" label="DAYS_BEFORE_ARTICLE_EXPIRES"
+			description="ARTICLE_EXPIRE_TIP">
+		</param>
+		<param type="spacer" name="@spacer" default="TRIGGERS_AND_FILTERS"></param>
+
+		<param name="sectfilter" type="text" size="30" default="" label="FILTER_BY_SECTION_IDS" description="FILTER_BY_SECTION_TIP" /><param name="catfilter" type="text" size="30" default="" label="FILTER_BY_CATEGORY_IDS" description="FILTER_BY_CATEGORY_TIP" /><param
+			type="radio" name="unpublished" label="PROCESS_UNPUBLISHED" default="1" description="PROCESS_UNPUBLISHED_TIP">
+	<option value="1">YES</option>
+	<option value="0">NO</option>
+</param>
+		<param type="radio" name="uncategorized" label="PROCESS_UNCATEGORIZED" default="0" description="PROCESS_UNCATEGORIZED_TIP">
+			<option value="1">YES</option>
+			<option value="0">NO</option></param>
+		<param type="spacer" name="@spacer" default="EXTRA_ACTIONS"></param>
+		<param name="fpflag" default="1" label="FRONTPAGE_FLAG" description="FRONTPAGE_FLAG_TIP" type="radio">
+			<option value="0">DO_NOT_CHANGE</option>
+			<option value="1">REMOVE</option>			
+	</param>		
+		<param name="fixnotauth" type="radio"  default="1" label="RESET_EXPIRATION" description="RESET_EXPIRATION_TIP" >
+	<option value="1">YES</option>
+	<option value="0">NO</option>
+	</param>
+		<param type="spacer" name="@spacer" default="NOTIFICATIONS"></param>
+		<param name="mailalert" type="list" default="none" label="SEND_NOTIFICATION_EMAIL" description="SEND_NOTIFICATION_TIP">
+			<option value="none">NO_MAIL_NOTIFICATIONS</option>
+			<option value="author">NOTIFY_ITEM_AUTHOR</option>
+			<option value="admins">NOTIFY_SITE_ADMIN</option>
+			<option value="both">NOTIFY_BOTH</option>
+		</param>
+	<param name="adminemail" type="textarea" rows="3" cols="30" default="" label="OVERRIDE_ADMIN_EMAIL" description="OVERRIDE_ADMIN_TIP" ></param>
+	<param type="spacer" name="@spacer" default="ADVANCED_OPTIONS"></param>
+		<param name="limit" type="text" size="4" default="1" label="HOW_MANY" description="HOW_MANY_TIP"></param>
+		<param name="lifetime" type="text" size="4" default="60" label="POLLING_CYCLE_INTERVAL" description="POLLING_CYCLE_TIP" >	</param>
+			
+	</params>
+</install>
