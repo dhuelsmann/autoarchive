@@ -14,23 +14,6 @@
 		<filename>index.html</filename>
 		<filename plugin="autoarchive3">autoarchive3.php</filename>
 	</files>
-</extension>
-
-<?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="content" method="upgrade">
-	<name>AutoArchive2</name>
-	<author>David Huelsmann / (TeachmeJoomla)</author>
-	<creationDate>December 10, 2009</creationDate>
-	<copyright>&#169; 2009 David Huelsmann / ( &#169; 2005 Tudor Ilisoi). All rights reserved.</copyright>
-	<license>GNU GPL Version 3 [url]http://www.gnu.org/licenses/gpl.html[/url]</license>
-	<authorEmail>webmaster@huelsmann.us</authorEmail>
-	<authorUrl>http://www.huelsmann.us</authorUrl>
-	<version>2.0.3</version>
-	<description>PLUGIN_DESCRIPTION</description>
-	<files>
-		<filename plugin="autoarchive2">autoarchive2.php</filename>
-		<filename>index.html</filename>
-	</files>
 	<languages>
 		<language tag="en-GB">languages/en-GB.plg_content_autoarchive3.ini</language>
 		<language tag="en-GB">languages/en-GB.plg_content_autoarchive3.sys.ini</language>
